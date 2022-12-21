@@ -6,7 +6,7 @@
 /*   By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 15:38:07 by mregh             #+#    #+#             */
-/*   Updated: 2022/12/17 17:17:39 by mregh            ###   ########.fr       */
+/*   Updated: 2022/12/22 00:52:18 by mregh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *str, int c)
 			found = 1;
 		str++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)str);
 	while (found == 1)
 	{

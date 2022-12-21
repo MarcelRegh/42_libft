@@ -6,7 +6,7 @@
 /*   By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 13:26:58 by mregh             #+#    #+#             */
-/*   Updated: 2022/12/17 17:14:03 by mregh            ###   ########.fr       */
+/*   Updated: 2022/12/22 00:51:38 by mregh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)str);
 		str++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)str);
 	return (NULL);
 }
