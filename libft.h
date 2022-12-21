@@ -6,7 +6,7 @@
 /*   By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 01:27:31 by mregh             #+#    #+#             */
-/*   Updated: 2022/12/20 23:17:34 by mregh            ###   ########.fr       */
+/*   Updated: 2022/12/21 10:34:37 by mregh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *str);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
