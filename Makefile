@@ -6,7 +6,7 @@
 #    By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/16 14:52:59 by mregh             #+#    #+#              #
-#    Updated: 2022/12/22 01:08:34 by mregh            ###   ########.fr        #
+#    Updated: 2022/12/22 13:15:06 by mregh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRC			=	ft_isalpha.c	\
 				ft_strdup.c		\
 				ft_substr.c		\
 				ft_strjoin.c	\
+				ft_strtrim.c	\
 
 OBJECTS		=	$(SRC:.c=.o)
 
