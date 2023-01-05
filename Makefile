@@ -6,7 +6,7 @@
 #    By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/16 14:52:59 by mregh             #+#    #+#              #
-#    Updated: 2023/01/03 11:03:32 by mregh            ###   ########.fr        #
+#    Updated: 2023/01/04 12:47:11 by mregh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC			=	ft_isalpha.c	\
 				ft_putstr_fd.c	\
 				ft_putendl_fd.c	\
 				ft_putnbr_fd.c	\
+				ft_split.c		\
 
 OBJECTS		=	$(SRC:.c=.o)
 

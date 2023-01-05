@@ -6,16 +6,17 @@
 /*   By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 01:27:31 by mregh             #+#    #+#             */
-/*   Updated: 2023/01/03 11:08:23 by mregh            ###   ########.fr       */
+/*   Updated: 2023/01/04 14:34:25 by mregh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # define MIN_INT -2147483648
-# define MAX_INT 2147483648
+# define MAX_INT 2147483647
 # include <string.h>
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 
 int		ft_isalpha(int c);
@@ -44,6 +45,7 @@ char	*ft_strdup(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *s, int fd);
