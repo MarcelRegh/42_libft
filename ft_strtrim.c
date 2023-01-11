@@ -6,7 +6,7 @@
 /*   By: mregh <mregh@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 13:04:35 by mregh             #+#    #+#             */
-/*   Updated: 2022/12/22 14:49:59 by mregh            ###   ########.fr       */
+/*   Updated: 2023/01/11 11:56:38 by mregh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,25 +30,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	i;
-	char	*ptr;
 
 	start = 0;
-	while (s1[start] != '\0' && ft_check_set(set, s1[start]) == 1)
+	if (!s1)
+		return (ft_strdup(""));
+	if (!set)
+		return (ft_strdup(s1));
+	while (ft_check_set(set, s1[start]) == 1)
 		start++;
-	end = ft_strlen(s1) - 1;
-	while (end > start && ft_check_set(set, s1[end]) == 1)
+	end = ft_strlen(s1);
+	while (end > start && ft_check_set(set, s1[end -1]) == 1)
 		end--;
-	ptr = (char *)ft_calloc(sizeof(char), (((end - start) + 1) + 1));
-	if (ptr != NULL)
-	{
-		i = 0;
-		while (i < ((end - start) + 1))
-		{
-			ptr[i] = s1[start + i];
-			i++;
-		}
-		ptr[i] = '\0';
-	}
-	return (ptr);
+	return (ft_substr(s1, start, end - start));
 }
